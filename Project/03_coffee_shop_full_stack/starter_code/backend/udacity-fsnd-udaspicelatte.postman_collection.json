@@ -237,11 +237,14 @@
 					"request": {
 						"url": "{{host}}/drinks",
 						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{barister_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
 						"description": ""
 					},
 					"response": []
@@ -264,11 +267,14 @@
 					"request": {
 						"url": "{{host}}/drinks/1",
 						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{barister_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
 						"description": ""
 					},
 					"response": []
@@ -291,11 +297,14 @@
 					"request": {
 						"url": "{{host}}/drinks/1",
 						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{barister_token}}",
+								"description": ""
+							}
+						],
+						"body": {},
 						"description": ""
 					},
 					"response": []
